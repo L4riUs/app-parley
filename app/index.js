@@ -6,7 +6,7 @@ import { PlusIcon } from "../src/components/icons"
 
 export default function Index() {
   return (
-    <View>
+    <View className="mt-10">
       <Leagues navigation="general" title="LIGAS DISPONIBLES" />
       <StatusBar style="auto" />
       <Link href="/poisson/" asChild>

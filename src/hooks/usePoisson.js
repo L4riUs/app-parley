@@ -132,12 +132,22 @@ export default function UsePoisson({ children }) {
         setTeam1("")
         setTeam2("")
     }
+    function resetForm() {
+        setTeam1("")
+        setTeam2("")
+        setTeam1Img("")
+        setTeam2Img("")
+        setMaxGoles(0)
+        setCode("")
+        setSelectedValue("2")
+        setPoisson()
+    }
 
     function handleText(name) {
         setMaxGoles(name)
     }
     return (
-        <Context.Provider value={{ selectedValue, setSelectedValue, Team1, Team2, setTeam1, setTeam2, setMaxGoles, maxGoles, calcular, setCode, code, handleClick, reset, handleText, Team1Img, Team2Img, poisson }}>
+        <Context.Provider value={{ selectedValue, setSelectedValue, Team1, Team2, setTeam1, setTeam2, setMaxGoles, maxGoles, calcular, setCode, code, handleClick, reset, handleText, Team1Img, Team2Img, poisson, resetForm }}>
             {children}
         </Context.Provider>
     )

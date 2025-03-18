@@ -4,7 +4,7 @@ import { Context } from '../../src/context/contex';
 import { Link } from 'expo-router';
 
 export default function Result() {
-    const { selectedValue, Team1, Team2, maxGoles, Team1Img, Team2Img, calcular, poisson, code } = useContext(Context);
+    const { selectedValue, Team1, Team2, maxGoles, Team1Img, Team2Img, calcular, poisson, code, resetForm } = useContext(Context);
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
